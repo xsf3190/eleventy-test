@@ -4,12 +4,10 @@ layout: base.njk
 ---
 
 <div class="container">
-    <h1>Centered heading</h1>
-    <p>Dear Old Goof.. <span class="vibe"></span></p>
-    <h2>Some articles for you</h2>
+    <h1>Latest News Articles</h1>
     <ul>
     {% for article in news.articles %}
-        <li><h2><a href="{{ article.url }}">{{ article.title }}</a></h2></li>
+        <li><h2><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h2></li>
     {% endfor %}
     </ul>
 </div>

@@ -9,6 +9,12 @@ permalink: /{{ news.country }}/index.html
 ---
 
 <div class="container">
+    <h1>Local Weather</h1>
+    <p id="city"></p>
+    <p id="temp_now"></p>
+    <p id="temp_min"></p>
+    <p id="temp_max"></p>
+
     <h1>Latest News Articles for {{ news.country }}</h1>
     <ul>
     {% for article in news.articles %}
@@ -16,4 +22,5 @@ permalink: /{{ news.country }}/index.html
     {% endfor %}
     </ul>
 </div>
-<script src="js/vibe.js"></script>
+<script src="/js/vibe.js"></script>
+<script src="/js/weather.js"></script>
